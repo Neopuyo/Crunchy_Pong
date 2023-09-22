@@ -1,0 +1,100 @@
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 80vh;
+  background: var(--primary1);
+}
+
+/* -------------PROFILE MAIN FRAME----------------- */
+
+.profileMainFrame {
+  color: var(--secondary1);
+  display: block;
+  flex-direction: row;
+  padding: 1rem;
+
+  width: 100%;
+
+  background-color: var(--primary2);
+  border-radius: clamp(0.15rem, 0.05rem + 1vw, 1.2rem);
+  box-shadow: inset clamp(0.15rem, 0.08rem + 0.15vw, 0.3rem)
+    clamp(0.15rem, 0.08rem + 0.15vw, 0.3rem)
+    clamp(0.2rem, 0.1rem + 0.25vw, 0.4rem) var(--shadow);
+}
+
+.profileMainFrame .both {
+  background-color: var(--primary1);
+  border-radius: clamp(0.15rem, 0.05rem + 1vw, 1.2rem);
+  box-shadow: clamp(0.15rem, 0.08rem + 0.15vw, 0.3rem)
+    clamp(0.15rem, 0.08rem + 0.15vw, 0.3rem)
+    clamp(0.2rem, 0.1rem + 0.25vw, 0.4rem) var(--shadow);
+}
+
+.profileMainFrame .first {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+
+  padding: 0;
+  min-width: 300px;
+  overflow-x: hidden;
+}
+
+.profileMainFrame .second {
+  min-width: 300px;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* border: 1px dashed hotpink; */
+}
+
+/* -------------- ERROR PAGE ---------------- */
+
+p.error {
+  color: var(--notif);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+p.icon {
+  font-size: 7.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--accent1);
+  font-family: var(--title-font);
+  font-size: 1.2rem;
+  font-weight: 650;
+}
+
+/* ------------ RESPONSIVE ------------------ */
+
+/* Breakpoint 1 : width > smartphone */
+/* @media (min-width: 38rem) { */
+@media (min-width: 50rem) {
+  .main {
+    margin-left: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .profileMainFrame {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .profileMainFrame .first {
+    margin-bottom: 0;
+    justify-content: center;
+    max-width: 45%;
+  }
+}

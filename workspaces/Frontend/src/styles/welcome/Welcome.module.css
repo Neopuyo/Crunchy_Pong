@@ -1,0 +1,73 @@
+.welcome {
+  width: 90%;
+  min-height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.welcome h2 {
+  padding: 20px;
+}
+
+.welcome span {
+  color: var(--accent1);
+}
+
+.welcome p {
+  text-align: center;
+  padding: 5px;
+}
+
+.signup {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.log {
+  outline: none;
+  text-decoration: none;
+  padding: 10px;
+  padding-right: 0;
+  cursor: pointer;
+  color: var(--accent1);
+  font-weight: bold;
+  font-family: var(--title-font);
+}
+
+.demo {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.demoBtn {
+  appearance: none;
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 2px;
+  color: var(--tertiary1);
+  background-color: var(--primary1);
+  border: 3px solid var(--tertiary1);
+  cursor: pointer;
+}
+
+.demoBtn:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.demoBtn:active {
+  scale: 0.95;
+}

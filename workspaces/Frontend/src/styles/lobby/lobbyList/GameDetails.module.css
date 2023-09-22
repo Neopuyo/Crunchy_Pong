@@ -1,0 +1,42 @@
+/* PartyDetails.module.css */
+.showScore {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 6px;
+  margin-top: -9px;
+}
+
+.displayRound {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  margin: 4px;
+  border: 3px solid var(--secondary1);
+  border-radius: 5px;
+}
+
+.roundRemaining {
+  border: 3px solid var(--primary2);
+}
+
+.currentRound {
+  border: 3px solid var(--secondary1);
+}
+
+.roundFinished {
+  border: 3px solid var(--secondary1);
+}
+
+.round {
+  margin-right: 8px;
+}
+
+.displayRound > * {
+  font-size: 16px;
+}

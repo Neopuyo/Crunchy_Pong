@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@images/*": ["./public/images/*"],
+      "@transcendence/shared/*": ["../Shared/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "@transcendence/shared/**/*.ts",
+    "@transcendence/shared/**/*.tsx",
+    ".next/types/**/*.ts",
+    "build/types/**/*.ts",
+    "next/types/**/*.ts",
+    "_next/types/**/*.ts",
+    "../Shared/types/Stats.types.ts",
+    "../Shared/game/random.tsx"
+  ],
+  "exclude": ["node_modules"]
+}

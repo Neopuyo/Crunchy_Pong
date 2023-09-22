@@ -1,0 +1,55 @@
+.avatarProfile {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-width: 300px fit-content;
+  padding-top: 50px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.links {
+  text-decoration: none;
+  width: 100%;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 6px solid var(--primary1);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.avatar:hover {
+  scale: 1.05;
+}
+
+.login {
+  color: var(--primary1);
+  background-color: var(--accent1);
+  padding: 5px;
+  border-radius: 8px;
+  width: fit-content;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.login:hover {
+  scale: 1.1;
+}
+
+@media (min-width: 65rem) {
+  .avatarProfile {
+    width: 30%;
+  }
+}

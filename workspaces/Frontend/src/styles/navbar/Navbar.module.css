@@ -1,0 +1,169 @@
+.nav {
+  width: 90%;
+  min-height: clamp(60px, 5vh, 100px);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  user-select: none;
+  background-color: var(--primary1);
+  margin: auto;
+}
+
+.barBottom {
+  width: 90%;
+  height: 3px;
+  background-color: var(--secondary2);
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.left {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-family: var(--title-font);
+  color: var(--secondary1);
+  text-decoration: none;
+}
+
+.right {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: clamp(160px, 12vw, 300px);
+}
+
+.rightAlone {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: clamp(160px, 12vw, 300px);
+}
+
+.logo {
+  width: clamp(40px, 3vh, 50px);
+  height: clamp(40px, 3vh, 50px);
+}
+
+.left:hover {
+  scale: 1.02;
+}
+
+.left:active {
+  scale: 0.95;
+}
+
+.logIn {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logInBtn {
+  appearance: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--tertiary1);
+  background-color: var(--primary1);
+  border: 3px solid var(--accent1);
+}
+
+.logInBtn:hover {
+  color: var(--accent3);
+  border: 3px solid var(--accent3);
+  cursor: pointer;
+}
+
+.logInBtn:active {
+  scale: 0.95;
+}
+
+.name {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.title {
+  display: flex;
+  color: var(--tertiary1);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.catchphrase {
+  display: flex;
+  color: var(--tertiary1);
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.chatBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(40px, 3vh, 70px);
+  height: clamp(40px, 3vh, 70px);
+  border-radius: 100%;
+  color: var(--secondary1);
+  background-color: var(--primary1);
+  border: 3px solid var(--secondary1);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.chatBtn:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.chatBtn:active {
+  scale: 0.95;
+}
+
+.menu {
+  width: 70%;
+  height: 70%;
+  margin: 0;
+  padding: 0;
+  /* padding-right: 2px; */
+}
+
+.toast {
+  display: flex;
+  /* flex-flow: row nowrap; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.toastAchievement {
+  width: 60px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--tertiary1);
+  border-radius: 8px;
+}
+
+.toastText {
+  padding-left: 10px;
+}
+
+.toastText h4 {
+  padding-bottom: 10px;
+  color: var(--accent1);
+}

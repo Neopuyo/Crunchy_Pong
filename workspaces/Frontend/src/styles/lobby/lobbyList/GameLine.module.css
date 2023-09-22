@@ -1,0 +1,79 @@
+/* PartyInfo.module.css */
+.gameLine {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  min-width: fit-content;
+  width: 100%;
+  margin-block: 10px;
+}
+
+.nameBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 150px;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--tertiary1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nameBtn:hover {
+  color: var(--accent1);
+}
+
+.typeInfo {
+  width: 70px;
+}
+
+.playersInfo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 200px;
+}
+
+.playersInfo > * {
+  margin-inline: 5px;
+}
+
+.roundInfo {
+  width: 60px;
+}
+
+.statusInfo {
+  width: 90px;
+}
+
+.actionInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100px;
+}
+
+.actionBtn {
+  appearance: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+  color: var(--primary1);
+  background-color: var(--secondary1);
+  border: 3px solid var(--accent1);
+}
+
+.actionBtn:checked {
+  transition: all 0.3s ease-out;
+}
+
+.actionBtn:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}

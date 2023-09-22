@@ -1,0 +1,27 @@
+/* Color Selector */
+
+/* .selector {} */
+
+.selector .row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4px;
+}
+
+.selector .row .button {
+  border-style: none;
+  margin-right: 2px;
+  margin-left: 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.selector .row .button:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.selector .row .button:active {
+  scale: 0.9;
+}

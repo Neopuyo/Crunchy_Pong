@@ -1,0 +1,49 @@
+.defineType {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.section {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--tertiary2);
+  margin-bottom: 5px;
+}
+
+.type {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.type button {
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 10px;
+  margin-top: 5px;
+  width: 80px;
+  height: 80px;
+}
+
+.activeBtn {
+  color: var(--primary1);
+  background-color: var(--secondary1);
+  border: 3px solid var(--accent1);
+  transition: all 0.3s ease-in;
+}
+
+.inactiveBtn {
+  color: var(--tertiary3);
+  background-color: var(--primary2);
+  border: 3px solid var(--tertiary3);
+  transition: all 0.3s ease-out;
+}
+
+.inactiveBtn:hover {
+  color: var(--accent2);
+  border: 3px solid var(--accent2);
+}

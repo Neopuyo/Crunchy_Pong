@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.main h2 {
+  color: var(--accent1);
+}
+
+.link {
+  padding: 20px;
+  text-decoration: none;
+  color: var(--tertiary1);
+}
+
+.link:visited {
+  color: var(--tertiary1);
+}
+
+.link span {
+  color: var(--accent2);
+}

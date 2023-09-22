@@ -1,0 +1,79 @@
+.fieldSelector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--tertiary2);
+  margin-bottom: 5px;
+}
+
+.invite {
+  /* border: 1px solid red; */
+  width: 60%;
+  padding-bottom: 10px;
+}
+
+.selected {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  margin: 10px;
+  padding: 5px 10px;
+  border: 2px solid var(--accent3);
+  border-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.avatar {
+  /* border: 1px solid red; */
+  height: 40px;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+}
+
+.login {
+  flex: 1;
+  max-width: 60%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.login h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.right {
+  /* border: 1px solid red; */
+  height: 30px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  color: var(--accent1);
+  cursor: pointer;
+}
+
+.icon:hover {
+  scale: 1.05;
+}
+
+.icon:active {
+  scale: 0.95;
+}

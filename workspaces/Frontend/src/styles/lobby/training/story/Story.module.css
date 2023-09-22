@@ -1,0 +1,52 @@
+.story {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.selector {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.save {
+  appearance: none;
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+  margin: 2px;
+  color: var(--primary1);
+  background-color: var(--secondary1);
+  border: 3px solid var(--accent1);
+}
+
+.save:checked {
+  transition: all 0.3s ease-out;
+}
+
+.save:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.save:active {
+  scale: 0.9;
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.barBottom {
+  width: 90%;
+  height: 3px;
+  background-color: var(--secondary2);
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-block: 10px;
+}

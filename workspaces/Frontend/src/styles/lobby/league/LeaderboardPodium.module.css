@@ -1,0 +1,82 @@
+.podium {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  min-width: 300px;
+  max-width: 600px;
+  margin: 25px;
+}
+
+.third,
+.first,
+.second {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  max-width: 200px;
+}
+
+.avatar {
+  display: flex;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  color: var(--primary1);
+  margin: 5px;
+  flex-shrink: 0;
+}
+
+.cruncher {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 90%;
+  font-size: 16px;
+  padding-inline: 5px;
+  font-weight: bold;
+  color: var(--tertiary1);
+}
+
+.cruncher span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.cruncher:hover {
+  color: var(--accent1);
+}
+
+.cruncher:active {
+  color: var(--accent1);
+  scale: 0.95;
+}
+
+.pad {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary3);
+  width: 100%;
+}
+
+.first .pad {
+  height: 130px;
+}
+
+.second .pad {
+  height: 95px;
+}
+
+.third .pad {
+  height: 70px;
+}

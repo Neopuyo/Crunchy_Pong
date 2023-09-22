@@ -1,0 +1,75 @@
+.storySelector {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.active,
+.inactive,
+.disabled {
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+
+.active {
+  color: var(--primary1);
+  background-color: var(--secondary1);
+  border: 3px solid var(--accent1);
+  transition: all 0.3s ease-in;
+}
+
+.inactive {
+  color: var(--secondary1);
+  background-color: var(--primary2);
+  border: 3px solid var(--secondary1);
+  transition: all 0.3s ease-out;
+}
+
+.inactive:hover {
+  color: var(--accent2);
+  border: 3px solid var(--accent2);
+}
+
+.disabled {
+  background-color: var(--secondary3);
+  border: 3px solid var(--secondary3);
+}
+
+.blur {
+  filter: blur(2px);
+}
+
+.detail {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.info > p {
+  margin: 5px;
+}
+
+.lock {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0%, 110%);
+  color: var(--secondary2);
+  font-size: 30px;
+  z-index: 1;
+}

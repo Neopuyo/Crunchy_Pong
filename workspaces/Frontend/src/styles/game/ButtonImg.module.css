@@ -1,0 +1,34 @@
+.imgBtn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background: #ffffff;
+  transition: 0.1s ease-in-out;
+
+  border: 3px solid transparent;
+}
+
+.home_button img {
+  height: 50px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.home_button p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+}
+
+.home_button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  z-index: 1;
+  border: 3px solid var(--accent1);
+}

@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* typo pour titres */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+/* typo pour texte courant */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  /* COLOR DEFINES - LIGHT*/
+
+  --primary1-light: rgb(254, 254, 254);
+  --primary1T-light: rgb(254, 254, 254, 0.9);
+  --primary2-light: rgb(220, 222, 233);
+  --primary3-light: rgb(183, 184, 207);
+
+  --secondary1-light: rgb(93, 95, 124);
+  --secondary1T-light: rgb(93, 95, 124, 0.9);
+  --secondary2-light: rgb(123, 125, 150);
+  --secondary3-light: rgb(170, 171, 184);
+
+  --tertiary1-light: rgb(22, 32, 55);
+  --tertiary2-light: rgb(40, 54, 87);
+  --tertiary3-light: rgb(61, 77, 115);
+
+  --accent1-light: rgb(15 139 222);
+  --accent2-light: rgb(47, 151, 220);
+  --accent3-light: rgb(102, 174, 223);
+
+  --bubble-light: rgb(254, 254, 254);
+  --notif-light: rgba(255, 85, 85, 1);
+  --achievement-light: rgba(252, 166, 95, 1);
+  --shadow-light: rgba(67, 80, 126, 0.22);
+
+  /* COLOR DEFINES - DARK*/
+
+  --primary1-dark: rgb(40, 44, 52);
+  --primary1T-dark: rgb(40, 44, 52, 0.8);
+  --primary2-dark: rgb(59, 65, 75);
+  --primary3-dark: rgb(69, 70, 92);
+
+  --secondary1-dark: rgb(131, 135, 162);
+  --secondary1T-dark: rgb(131, 135, 162, 0.8);
+  --secondary2-dark: rgb(105, 114, 132);
+  --secondary3-dark: rgb(71, 72, 85);
+
+  --tertiary1-dark: rgb(200, 206, 233);
+  --tertiary2-dark: rgb(181, 189, 221);
+  --tertiary3-dark: rgb(140, 144, 194);
+
+  --accent1-dark: rgb(15 139 222);
+  --accent2-dark: rgb(47, 151, 220);
+  --accent3-dark: rgb(102, 174, 223);
+
+  --bubble-dark: rgb(71, 72, 85);
+  --notif-dark: rgba(255, 85, 85, 1);
+  --achievement-dark: rgba(252, 166, 95, 1);
+  --shadow-dark: rgba(67, 80, 126, 0.22);
+
+  /* FONT DEFINES*/
+  --title-font: "Quicksand", sans-serif;
+  --text-font: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+[color-scheme="light"] {
+  --primary1: var(--primary1-light);
+  --primary1T: var(--primary1T-light);
+  --primary2: var(--primary2-light);
+  --primary3: var(--primary3-light);
+
+  --secondary1: var(--secondary1-light);
+  --secondary1T: var(--secondary1T-light);
+  --secondary2: var(--secondary2-light);
+  --secondary3: var(--secondary3-light);
+
+  --tertiary1: var(--tertiary1-light);
+  --tertiary2: var(--tertiary2-light);
+  --tertiary3: var(--tertiary3-light);
+
+  --accent1: var(--accent1-light);
+  --accent2: var(--accent2-light);
+  --accent3: var(--accent3-light);
+
+  --notif: var(--notif-light);
+  --bubble: var(--bubble-light);
+  --achievement: var(--achievement-light);
+  --shadow: var(--shadow-light);
+}
+
+[color-scheme="dark"] {
+  --primary1: var(--primary1-dark);
+  --primary1T: var(--primary1T-dark);
+  --primary2: var(--primary2-dark);
+  --primary3: var(--primary3-dark);
+
+  --secondary1: var(--secondary1-dark);
+  --secondary1T: var(--secondary1T-dark);
+  --secondary2: var(--secondary2-dark);
+  --secondary3: var(--secondary3-dark);
+
+  --tertiary1: var(--tertiary1-dark);
+  --tertiary2: var(--tertiary2-dark);
+  --tertiary3: var(--tertiary3-dark);
+
+  --accent1: var(--accent1-dark);
+  --accent2: var(--accent2-dark);
+  --accent3: var(--accent3-dark);
+
+  --notif: var(--notif-dark);
+  --bubble: var(--bubble-dark);
+  --achievement: var(--achievement-dark);
+  --shadow: var(--shadow-dark);
+}
+
+html,
+body {
+  background: var(--primary1);
+  color: var(--tertiary1);
+  font-family: var(--text-font);
+  width: 100%;
+  max-width: 2500px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent1);
+  border-radius: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+}
+
+::selection {
+  background: var(--primary1);
+  color: var(--accent1);
+}

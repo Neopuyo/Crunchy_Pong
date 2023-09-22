@@ -1,0 +1,20 @@
+
+
+
+NOM                 ICON-name
+
+gameWin             <FontAwesomeIcon icon={faHandPeace} />
+gameLoose           <FontAwesomeIcon icon={faPoo} />
+league              <FontAwesomeIcon icon={faRankingStar} />
+party               <FontAwesomeIcon icon={faPeopleGroup} />
+training            <FontAwesomeIcon icon={faDumbbell} />
+story               <FontAwesomeIcon icon={faScroll} />
+demo                <FontAwesomeIcon icon={faVideo} />
+
+
+Google              <FontAwesomeIcon icon={faGoogle} />
+42                  <FontAwesomeIcon icon={faGraduationCap} />
+email               <FontAwesomeIcon icon={faEnvelope} />
+DOUBLE_AUTH         <FontAwesomeIcon icon={faShieldHalved} />
+uploadImage         <FontAwesomeIcon icon={faCloudArrowUp} />
+

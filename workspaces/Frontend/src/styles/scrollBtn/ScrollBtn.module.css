@@ -1,0 +1,32 @@
+.scroll {
+  position: fixed;
+  bottom: 60px;
+  right: 1%;
+  display: flex;
+  width: clamp(40px, 3vh, 50px);
+  height: clamp(40px, 3vh, 50px);
+  z-index: 1;
+}
+
+.scrollBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(40px, 3vh, 70px);
+  height: clamp(40px, 3vh, 70px);
+  border-radius: 100%;
+  color: var(--secondary1);
+  background-color: var(--primary1);
+  border: 3px solid var(--secondary1);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.scrollBtn:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.scrollBtn:active {
+  scale: 0.95;
+}

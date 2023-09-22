@@ -1,0 +1,27 @@
+.gameKey {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.dropdown {
+  font-size: 0.85rem;
+  font-family: var(--text-font);
+  background-color: var(--primary1);
+  border: 3px solid var(--accent1);
+  color: var(--tertiary1);
+  width: 70%;
+  border-radius: 4px;
+  padding: 3px 15px;
+  text-align: center;
+  margin-block: 10px;
+
+  max-width: fit-content;
+}
+
+.dropdown:hover {
+  color: var(--accent3);
+}

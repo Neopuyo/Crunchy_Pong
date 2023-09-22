@@ -1,0 +1,39 @@
+.active,
+.inactive {
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+
+.active {
+  color: var(--primary1);
+  background-color: var(--secondary1);
+  border: 3px solid var(--accent1);
+  transition: all 0.3s ease-in;
+}
+
+.inactive {
+  color: var(--secondary1);
+  background-color: var(--primary2);
+  border: 3px solid var(--secondary1);
+  transition: all 0.3s ease-out;
+}
+
+.inactive:hover {
+  color: var(--accent2);
+  border: 3px solid var(--accent2);
+}
+
+.info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.info > p {
+  margin: 5px;
+}

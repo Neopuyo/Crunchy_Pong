@@ -1,0 +1,65 @@
+.main {
+  width: clamp(200px, 80vw, 2000px);
+  display: flex;
+  overflow-x: auto;
+  margin: auto;
+  padding: 20px;
+  justify-content: flex-start;
+  scrollbar-color: var(--accent1);
+  padding-bottom: clamp(10px, 3vh, 60px);
+  padding-top: clamp(0px, 2vh, 40px);
+}
+
+.main::-webkit-scrollbar {
+  height: 2px;
+}
+
+.main::-webkit-scrollbar-track {
+  display: none;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background-color: var(--accent1);
+}
+
+.avatar {
+  flex: 0 0 auto;
+  margin: 0px 10px;
+  margin-top: 5px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar:first-child {
+  margin-left: auto;
+}
+
+.avatar:last-child {
+  margin-right: auto;
+}
+
+.selected {
+  box-shadow: 0 0 8px 4px var(--accent3);
+}
+
+.avatar:hover {
+  box-shadow: 0 0 8px 4px var(--accent3);
+}
+
+.avatar:active {
+  scale: 0.9;
+}
+
+.chooseColor {
+  padding-top: clamp(10px, 1vh, 30px);
+}
+
+.loading {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

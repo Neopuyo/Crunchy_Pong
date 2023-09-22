@@ -1,0 +1,12 @@
+.socketError {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorLink {
+  margin-top: 20px;
+  color: var(--accent1);
+  text-decoration: none;
+}

@@ -1,0 +1,65 @@
+.inTraining {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.inGameChoice {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumeBtn,
+.quitBtn {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  appearance: none;
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+  margin: 10px;
+}
+
+.resumeBtn:checked,
+.quitBtn:checked {
+  transition: all 0.3s ease-out;
+}
+
+.resumeBtn {
+  color: var(--primary1);
+  background-color: var(--secondary1);
+  border: 3px solid var(--accent1);
+}
+
+.quitBtn {
+  color: var(--primary1);
+  background-color: var(--tertiary1);
+  border: 3px solid var(--secondary1);
+}
+
+.resumeBtn:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.quitBtn:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.barBottom {
+  width: 90%;
+  height: 3px;
+  background-color: var(--secondary2);
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+}

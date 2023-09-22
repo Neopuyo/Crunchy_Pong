@@ -1,0 +1,96 @@
+.partyList {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.listTitle {
+  margin-bottom: 12px;
+}
+
+.list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  width: 100%;
+  background-color: var(--primary1);
+  border: 3px solid var(--primary3);
+  border-radius: 8px;
+  overflow: auto;
+  height: 380px;
+  position: relative;
+  @media screen and (min-width: 1100px) {
+    height: 380px;
+  }
+}
+
+.listHead {
+  top: 0;
+  align-self: flex-start;
+  position: sticky;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  min-width: fit-content;
+  width: 100%;
+  background-color: var(--primary3);
+  border-bottom: 3px solid var(--primary1);
+  z-index: 1;
+}
+
+.listHead > * {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 5px;
+  min-width: fit-content;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: var(--title-font);
+}
+
+.cruncher {
+  width: 250px;
+}
+
+.rank {
+  width: 100px;
+}
+
+.points {
+  width: 100px;
+}
+
+.win {
+  width: 100px;
+}
+
+.loss {
+  width: 100px;
+}
+
+.listBody {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  min-width: fit-content;
+  width: 100%;
+}
+
+.loading {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 70rem) {
+  .partyList {
+    width: 40%;
+  }
+}

@@ -1,0 +1,71 @@
+.pongHead {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.leftBlock {
+  width: clamp(40px, 3vh, 70px);
+  height: clamp(40px, 3vh, 70px);
+  margin: 5px;
+}
+
+.title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+
+.keyBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(40px, 3vh, 70px);
+  height: clamp(40px, 3vh, 70px);
+  border-radius: 100%;
+  color: var(--secondary1);
+  background-color: var(--primary1);
+  border: 3px solid var(--secondary1);
+  font-size: 22px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.keyBtn:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.keyBtn:active {
+  scale: 0.95;
+}
+
+.quitBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(40px, 3vh, 70px);
+  height: clamp(40px, 3vh, 70px);
+  border-radius: 100%;
+  color: var(--secondary1);
+  background-color: var(--primary1);
+  border: 3px solid var(--secondary1);
+  font-size: 22px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.quitBtn:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.quitBtn:active {
+  scale: 0.95;
+}

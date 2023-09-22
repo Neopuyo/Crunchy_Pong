@@ -1,0 +1,63 @@
+.gameEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 10px;
+  background-color: var(--secondary1T);
+  width: 70%;
+  max-width: 400px;
+}
+
+.winner {
+  color: var(--primary1);
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  border-bottom: 3px solid var(--accent1);
+}
+
+.homeBtn {
+  appearance: none;
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+  margin: 5px;
+  margin-bottom: 10px;
+  color: var(--primary1);
+  background-color: var(--secondary1);
+  border: 3px solid var(--accent1);
+}
+
+.homeBtn:checked {
+  transition: all 0.3s ease-out;
+}
+
+.homeBtn:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.homeBtn:active {
+  scale: 0.8;
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+@media screen and (max-width: 550px) {
+  .winnerName {
+    font-size: 18px;
+  }
+
+  .winnerText {
+    font-size: 14px;
+  }
+
+  .homeBtn {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+}

@@ -1,0 +1,45 @@
+.imgList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.imgList button {
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+
+.disabled {
+  color: var(--secondary3);
+  background-color: var(--secondary3);
+  border: 3px solid var(--secondary3);
+}
+
+.activeButton {
+  color: var(--primary1);
+  background-color: var(--secondary1);
+  border: 3px solid var(--accent1);
+  transition: all 0.3s ease-in;
+}
+
+.inactiveButton {
+  color: var(--secondary3);
+  background-color: var(--primary2);
+  border: 3px solid var(--secondary3);
+  transition: all 0.3s ease-out;
+}
+
+.inactiveButton:hover {
+  color: var(--accent2);
+  border: 3px solid var(--accent2);
+}
+
+.blur {
+  filter: blur(2px);
+}

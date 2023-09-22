@@ -1,0 +1,68 @@
+version: "3.8"
+
+networks:
+  transcendence:
+    name: transcendence
+
+volumes:
+  transcendence_vol:
+    driver: local
+    driver_opts:
+      device: .
+      o: bind
+      type: none
+
+  database_conf_vol:
+
+  database_data_vol:
+
+services:
+  database:
+    build:
+      context: .
+      dockerfile: ./Dockers/Database/Dockerfile
+    container_name: Database
+    ports:
+      - 5432:5432
+    volumes:
+      - database_conf_vol:/etc/postgresql/15/
+      - database_data_vol:/var/lib/postgresql/15/
+    env_file:
+      - .env
+    networks:
+      - transcendence
+    restart: always
+
+  backend:
+    build:
+      context: .
+      dockerfile: ./Dockers/Backend/Dockerfile
+    container_name: Backend
+    ports:
+      - 4000:4000
+    volumes:
+      - transcendence_vol:/home
+    env_file:
+      - .env
+    networks:
+      - transcendence
+    depends_on:
+      - database
+    restart: always
+
+  frontend:
+    build:
+      context: .
+      dockerfile: ./Dockers/Frontend/Dockerfile
+    container_name: Frontend
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - transcendence_vol:/home
+    env_file:
+      - .env
+    networks:
+      - transcendence
+    restart: always

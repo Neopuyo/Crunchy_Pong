@@ -1,0 +1,96 @@
+.part {
+	padding-top: 20px;
+}
+
+.pongieSearched {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: clamp(18px, 1vw, 30px);
+	/* border: 1px solid red; */
+}
+
+.avatar {
+	height: 40px;
+	aspect-ratio: 1 / 1;
+	flex-shrink: 0;
+}
+
+.login{
+	word-break: break-all;
+	padding-left: 10px;
+}
+
+.footer {
+	border: 1px solid green;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-around;
+	height: 40px;
+	background-color: var(--accent1);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.footer .icon {
+	width: 25px;
+	height: 25px;
+	color: var(--primary1);
+	cursor: pointer;
+}
+
+.footer .iconFriend {
+	width: 25px;
+	height: 25px;
+	color: var(--primary1);
+}
+
+.icon:hover, .badge:hover {
+	scale: 1.05;
+}
+
+.icon:active, .badge:active {
+	scale: 0.95;
+}
+
+.footer .badge {
+	cursor: pointer;
+}
+
+.otherPongies {
+	cursor: pointer;
+}
+
+.otherPongies:hover {
+	background-color: var(--primary2);
+}
+
+.searchBar {
+	display: flex;
+	flex-flow: row nowrap;
+	/* border: 1px solid red; */
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bar {
+	flex-grow: 1;
+}
+
+.menu {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+}
+
+.menu:hover {
+	scale: 1.05;
+}
+
+.menu:active {
+	scale: 0.95;
+}

@@ -1,0 +1,167 @@
+.confirmEmailPage {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 80vh;
+  background: var(--primary1);
+}
+
+.confirmEmailFrame {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary2);
+  border-radius: clamp(0.15rem, 0.05rem + 1vw, 1.2rem);
+  box-shadow: inset clamp(0.15rem, 0.08rem + 0.15vw, 0.3rem)
+    clamp(0.15rem, 0.08rem + 0.15vw, 0.3rem)
+    clamp(0.2rem, 0.1rem + 0.25vw, 0.4rem) var(--shadow);
+}
+
+.confirmEmail {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: clamp(20px, 5vh, 100px);
+  background-color: var(--primary1);
+  border-radius: clamp(0.15rem, 0.05rem + 1vw, 1.2rem);
+  box-shadow: clamp(0.15rem, 0.08rem + 0.15vw, 0.3rem)
+    clamp(0.15rem, 0.08rem + 0.15vw, 0.3rem)
+    clamp(0.2rem, 0.1rem + 0.25vw, 0.4rem) var(--shadow);
+}
+
+.title {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 4rem);
+  font-weight: bold;
+  padding-bottom: clamp(20px, 5vh, 100px);
+}
+
+.description {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.code {
+  margin: 0 auto;
+}
+
+.inputCode {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 40px;
+}
+
+.inputCode input {
+  outline: none;
+  text-transform: uppercase;
+  border: 2px solid var(--secondary1);
+  text-align: center;
+  margin: 2px;
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+  border-radius: 8px;
+  background-color: inherit;
+  color: var(--tertiary1);
+}
+
+.inputs input:focus {
+  outline: none;
+  border: 3px solid var(--accent1);
+}
+
+.msg {
+  padding-top: 20px;
+}
+
+.submitBtn {
+  cursor: pointer;
+  appearance: none;
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-block: 20px;
+  margin-inline: 10px;
+  color: var(--tertiary1);
+  background-color: var(--primary1);
+  border: 3px solid var(--accent1);
+}
+
+.submitBtn:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.bottomText {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.again {
+  appearance: none;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: var(--secondary1);
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.again:hover {
+  color: var(--accent1);
+}
+
+.again:checked {
+  color: var(--accent2);
+}
+
+.popup p {
+  font-size: 0.9rem;
+}
+
+.popup span {
+  color: var(--accent1);
+  cursor: pointer;
+}
+
+.popup input {
+  outline: none;
+  border: none;
+  width: 50%;
+  margin: 10px;
+  border-bottom: 1px solid var(--tertiary1);
+  text-transform: uppercase;
+  background-color: inherit;
+}
+
+.appears {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.appears button {
+  margin: 0;
+}
+
+.notif {
+  margin-top: 5px;
+}

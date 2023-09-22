@@ -1,0 +1,369 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: clamp(0.25rem, 0.5rem + 5vw, 1rem);
+}
+
+.navbar .button {
+  font-size: clamp(0.5rem, 0.2rem + 1.5vw, 1rem);
+  font-weight: 700;
+  font-family: var(--title-font);
+  color: var(--secondary3);
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar .button.active {
+  color: var(--secondary1);
+}
+
+.navbar .button:hover,
+.navbar .button.active:hover {
+  color: var(--accent1);
+}
+
+/* ----------------------------------- */
+
+.sections {
+  min-height: 400px;
+  min-width: 250px;
+  padding: clamp(0.25rem, 0.5rem + 5vw, 1rem);
+}
+
+.columnStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  /* border: 1px solid hotpink; */
+}
+
+.sections .leftAlign {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.sections .spliter {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary2);
+  margin-top: 4px;
+  margin-bottom: 14px;
+  opacity: 0.5;
+}
+
+.sections p.story,
+.sections p.story.placeholder,
+.sections p {
+  margin-bottom: 1rem;
+  padding-left: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.sections .story p.storyOneLine {
+  font-size: 0.85rem;
+  padding-left: 0.3rem;
+  /* color:hotpink; */
+}
+
+.sections input,
+.sections p.motto {
+  color: var(--secondary1);
+  font-size: 1rem;
+  padding-left: 0;
+}
+
+.sections p.password {
+  color: var(--secondary1);
+  font-size: 1rem;
+}
+
+.section input::placeholder {
+  color: var(--secondary3);
+}
+
+.sections p.story.placeholder,
+.sections p.motto.placeholder,
+.sections p.password.placeholder {
+  color: var(--secondary3);
+}
+
+.sections p.motto:before {
+  content: open-quote;
+}
+
+.sections p.motto:after {
+  content: close-quote;
+}
+
+.sections p.motto:after,
+.sections p.motto:before {
+  color: var(--accent1);
+}
+
+.sections p.tinyTitle {
+  font-family: var(--title-font);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent1);
+  margin-bottom: 0;
+  padding-left: 0;
+
+  width: 100%;
+  max-width: 800px;
+
+  /* border: 1px solid yellow; */
+}
+
+.sections input {
+  appearance: none;
+  border: none;
+  font-family: var(--text-font);
+  color: var(--secondary1);
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--primary1);
+}
+
+.sections .story {
+  width: 100%;
+  max-width: 800px;
+}
+
+.sections form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+
+  /* border: 1px dashed hotpink; */
+}
+
+.sections .story textarea {
+  font-size: 0.85rem;
+  font-family: var(--text-font);
+  color: var(--secondary1);
+  background-color: var(--primary1);
+
+  outline: none;
+  resize: none;
+  /* height: auto; */
+
+  width: 100%;
+  border: 0;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  padding-left: 0.3rem;
+
+  /* border: 1px dashed cornflowerblue; */
+}
+
+.sections input:focus {
+  outline: none;
+}
+
+.sections .notif {
+  font-size: 0.8rem;
+  color: var(--notif);
+}
+
+.sections .button_type1 {
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--primary1);
+  background-color: var(--secondary1);
+  border: 0.2rem solid var(--accent1);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in;
+  width: 250px;
+}
+
+.sections .button_type1:hover {
+  cursor: pointer;
+  background-color: var(--primary1);
+  border: 0.2rem solid var(--accent1);
+  color: var(--accent1);
+}
+
+/* ----------------------------------- */
+
+/* into .sections */
+.item {
+  background-color: var(--primary2);
+  border-radius: clamp(0.15rem, 0.05rem + 1vw, 1.2rem);
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  min-width: 350px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.item .header {
+  background-color: var(--accent1);
+  border-radius: clamp(0.15rem, 0.05rem + 1vw, 1.2rem)
+    clamp(0.15rem, 0.05rem + 1vw, 1.2rem) 0 0;
+  padding: 0.5rem;
+}
+
+.item .header h1 {
+  color: var(--primary1);
+  font-family: var(--title-font);
+  font-size: 0.7rem;
+}
+
+.leagueContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.leagueContainer .subLeagueContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+
+  /* border: 1px solid chartreuse; */
+}
+
+/* ----------------------------------- */
+
+/* into .sections */
+.rolesList {
+  margin-top: 10px;
+}
+
+.rolesList ul,
+.rolesList li {
+  list-style: none;
+}
+
+.rolesList .row {
+  padding: 6px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rolesList .row.focused {
+  background-color: var(--primary2);
+}
+
+.rolesList .row .avatar {
+  height: 40px;
+  width: 40px;
+}
+
+.rolesList .row a {
+  padding-left: 4px;
+  text-decoration: none;
+  margin: auto 0;
+  font-family: var(--title);
+  font-weight: 600;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.rolesList .row .controlPannel {
+  margin: auto 0;
+  padding-left: 5px;
+}
+
+.rolesList .row .controlPannel .command {
+  margin-right: 5px;
+}
+
+.rolesList .row .controlPannel .confirmationPannel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.rolesList .row .controlPannel .command:hover,
+.rolesList .row .controlPannel .confirmationPannel .vcbutton:hover {
+  scale: 1.2;
+}
+
+.rolesList .row .controlPannel .confirmationPannel .vctext {
+  font-family: var(--text-font);
+  font-size: 0.7rem;
+}
+
+/* -------------------- section content ------------------------- */
+
+.sections .marginTop {
+  margin-top: 10px;
+}
+
+.sections .noMargin {
+  margin: 0px;
+}
+
+.sections .button {
+  user-select: none;
+  display: inline-block;
+  letter-spacing: 1px;
+  appearance: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: var(--tertiary1);
+  background-color: var(--primary1);
+  border: 3px solid var(--accent1);
+  padding: 2px 15px;
+  margin-right: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.sections .button.inactive:hover {
+  cursor: pointer;
+}
+
+.sections .button.inactive {
+  color: var(--primary2);
+  border: 3px solid var(--primary2);
+}
+
+.sections .button.inactive:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent1);
+}
+
+.sections .button.active {
+  color: var(--accent2);
+  border: 3px solid var(--accent2);
+}
+
+.sections .button.displayingOnly {
+  font-size: 1rem;
+}
+
+/* ----------------------------------- */
+
+@media (min-width: 50rem) {
+  .navbar {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 66rem) {
+  .navbar {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,382 @@
+/* FRAME - PARENT COMPONENT */
+.channelMsgFrame {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+/* ----------------- HEADER ----------------- */
+.channelMsgFrame .header {
+  min-height: 40px;
+  max-height: 60px;
+  background-color: var(--secondary3);
+  display: flex;
+  justify-content: center;
+  padding: 5px 35px;
+  align-items: center;
+  flex-flow: row nowrap;
+  /* border: 1px solid red; */
+}
+
+.channelMsgFrame .header .icon {
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  padding-right: 15px;
+}
+
+.channelMsgFrame .header .card {
+  /* border: 2px solid blue; */
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  color: var(--accent1);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  overflow: hidden;
+
+  /* border: 2px dashed var(--notif); */
+}
+
+.channelMsgFrame .header .card {
+  cursor: pointer;
+}
+
+.channelMsgFrame .header .name {
+  cursor: pointer;
+  /* border: 2px solid red; */
+  /* flex: 1; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.channelMsgFrame .header .card .avatar {
+  aspect-ratio: 1;
+  /* height: 100%; */
+  height: 45px;
+}
+
+/* ----------------- Invite game button ----------------- */
+
+.inviteButton {
+  /* min-height: 20px; */
+  /* aspect-ratio: 1 / 1; */
+  color: var(--tertiary3);
+  margin: 0 10px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+
+.mainInviteButton {
+  /* border: 1px solid green; */
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexButtons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.iconInviteGame {
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  color: var(--tertiary3);
+  /* border: 2px solid green; */
+}
+
+.iconInviteGame:hover {
+  scale: 1.05;
+}
+
+.iconInviteGame:active {
+  scale: 0.95;
+}
+
+/* ----------------- MESSAGE BOARD ----------------- */
+
+.channelMsgFrame .msgBoard {
+  background-color: var(--primary1);
+  padding: 6px 20px 6px 10px;
+  flex-grow: 1;
+  overflow-y: scroll;
+  height: 0px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.channelMsgFrame .msgBoard::-webkit-scrollbar {
+  width: 5px;
+}
+
+.channelMsgFrame .msgBoard::-webkit-scrollbar-track {
+  display: none;
+}
+
+.channelMsgFrame .msgBoard::-webkit-scrollbar-thumb {
+  background-color: var(--accent1);
+  border-radius: 5px;
+}
+
+.channelMsgFrame .msgBoard p.placeholder {
+  color: var(--secondary1);
+  text-align: center;
+}
+
+.channelMsgFrame .msgBoard .msgItem {
+  margin-bottom: 15px;
+  display: flex;
+
+  /* border: 2px dashed var(--accent1); */
+  padding-top: 2px;
+  position: relative;
+  border-top: 1px solid var(--primary1);
+}
+
+.channelMsgFrame .msgBoard .msgItem:hover {
+  border-top: 1px solid var(--accent3);
+}
+
+.channelMsgFrame .msgBoard .msgItem .loading {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0 20px;
+  /* border: 1px solid red; */
+}
+
+.channelMsgFrame .msgBoard .msgItem .avatarSide {
+  width: 60px;
+  margin-right: 6px;
+  /* display: flex; */
+  /* justify-content: center; */
+
+  /* background-color: cadetblue; */
+}
+
+.channelMsgFrame .msgBoard .msgItem .avatarSide .avatarSlot {
+  width: 46px;
+  height: 46px;
+  margin-left: 6px;
+}
+
+.channelMsgFrame .msgBoard .msgItem .textSide {
+  flex: 1;
+
+  /* background-color: rgb(151, 190, 107); */
+}
+
+.channelMsgFrame .msgBoard .msgItem .textSide .tsheader {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 4px;
+  height: 25px;
+
+  /* background-color: rgb(151, 190, 107); */
+}
+
+.channelMsgFrame .msgBoard .msgItem .textSide .tsheader .baseline {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.channelMsgFrame .msgBoard .msgItem .textSide .tsheader .name {
+  font-family: var(--title-font);
+  font-weight: 650;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* background-color: rgb(151, 190, 107); */
+}
+
+.channelMsgFrame .msgBoard .msgItem .notifDate {
+  color: var(--accent1);
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.channelMsgFrame .msgBoard .msgItem .textSide .tsheader .date {
+  color: var(--secondary1);
+  font-size: 0.7rem;
+  flex: 1;
+  /* background-color: rgb(151, 190, 107); */
+}
+
+.channelMsgFrame .msgBoard .msgItem .textSide {
+  min-width: 0;
+}
+
+.channelMsgFrame .msgBoard .msgItem .textSide .content pre {
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  font-family: var(--text);
+  font-size: 1rem;
+}
+
+.flexContentMsg {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.flexContentMsg .content {
+  flex: 1;
+  overflow: hidden;
+}
+
+.flexContentMsg button {
+  outline: none;
+  border: 2px solid var(--accent1);
+  background-color: var(--primary1);
+  border-radius: 10px;
+  text-transform: uppercase;
+  height: 30px;
+  width: 50px;
+  cursor: pointer;
+  color: var(--tertiary1);
+}
+
+.flexContentMsg button:hover {
+  border-color: var(--accent3);
+}
+
+.channelMsgFrame .msgBoard .msgItem .textSide .content.serverNotif pre {
+  font-size: 0.8rem;
+  color: var(--secondary1);
+}
+
+.channelMsgFrame .popUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--primary1);
+  padding: 6px 20px 6px 10px;
+  flex-grow: 1;
+  overflow-y: scroll;
+  height: 0px;
+}
+
+.channelMsgFrame .popUp p.error {
+  color: var(--notif);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.channelMsgFrame .popUp p.icon {
+  font-size: 7.5rem;
+}
+
+.channelMsgFrame .popUp .link {
+  text-decoration: none;
+  color: var(--accent1);
+  font-family: var(--title-font);
+  font-size: 1.2rem;
+  font-weight: 650;
+}
+
+/* ----------------- PROMPT ----------------- */
+.channelMsgFrame .prompt {
+  min-height: 30px;
+  background-color: var(--secondary3);
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 2px dashed var(--accent1); */
+}
+
+.channelMsgFrame .prompt form {
+  background-color: var(--primary1);
+  border-radius: 8px;
+  overflow: hidden;
+
+  max-width: 800px;
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 2px dashed var(--notif); */
+}
+
+.channelMsgFrame .prompt textarea {
+  border: none;
+  resize: none;
+  background: none;
+  font-family: var(--text);
+  color: var(--tertiary1);
+  flex: 1;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  /* default value for first render */
+  height: 40px;
+
+  /* background-color: rgb(179, 122, 233); */
+}
+
+.channelMsgFrame .prompt textarea:focus {
+  outline: none;
+}
+
+.channelMsgFrame .prompt .paperPlane {
+  color: var(--accent1);
+  font-size: 1.3rem;
+  background: none;
+  border: none;
+
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.channelMsgFrame .prompt .paperPlane.disabledButton {
+  color: var(--primary3);
+  cursor: default;
+}
+
+.channelMsgFrame .prompt .paperPlane.disabledButton:hover {
+  cursor: default;
+}
+
+.channelMsgFrame .prompt .paperPlane:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,36 @@
+.form {
+	width: clamp(60px, 8vh, 150px);
+  	height: clamp(60px, 8vh, 150px);
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: flex-start;
+	/* border: 1px solid red; */
+	border-radius: 100%;
+}
+
+.upload {
+	width: clamp(60px, 8vh, 150px);
+	height: clamp(60px, 8vh, 150px);
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+.avatar {
+	width: clamp(60px, 8vh, 150px);
+	height: clamp(60px, 8vh, 150px);
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+}
+
+.icon {
+	width: 1.5rem;
+	height: 70%;
+}

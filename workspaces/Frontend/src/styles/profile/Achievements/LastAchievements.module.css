@@ -1,0 +1,63 @@
+.lastAchievements {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridItem {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  border: 3px solid var(--primary3);
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  margin: 8px;
+}
+
+.gridItem:hover {
+  box-shadow: 0px 0px 15px var(--accent3);
+}
+
+.shortAchievement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  background-color: var(--achievement);
+}
+
+.circleAround {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: var(--primary1);
+}
+
+.circleInside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 100%;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+}
+
+.tooltip {
+  border: 6px solid black;
+  width: 100%;
+  height: 100%;
+}

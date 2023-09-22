@@ -1,0 +1,13 @@
+.homeProfil {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: space-evenly;
+  width: 100%;
+  background-color: var(--primary1);
+  border-radius: clamp(0.15rem, 0.05rem + 1vw, 1.2rem);
+  box-shadow: clamp(0.15rem, 0.08rem + 0.15vw, 0.3rem)
+    clamp(0.15rem, 0.08rem + 0.15vw, 0.3rem)
+    clamp(0.2rem, 0.1rem + 0.25vw, 0.4rem) var(--shadow);
+  padding: 15px;
+}

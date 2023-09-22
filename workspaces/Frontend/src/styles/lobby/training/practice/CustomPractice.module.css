@@ -1,0 +1,56 @@
+.active,
+.inactive {
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 5px auto;
+}
+
+.active {
+  color: var(--primary1);
+  background-color: var(--secondary1);
+  border: 3px solid var(--accent1);
+  transition: all 0.3s ease-in;
+}
+
+.inactive {
+  color: var(--secondary1);
+  background-color: var(--primary2);
+  border: 3px solid var(--secondary1);
+  transition: all 0.3s ease-out;
+}
+
+.inactive:hover {
+  color: var(--accent2);
+  border: 3px solid var(--accent2);
+}
+
+.settings {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.set {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  margin: 10px auto;
+}
+
+.gameImage {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.details {
+  margin-top: 10px;
+}

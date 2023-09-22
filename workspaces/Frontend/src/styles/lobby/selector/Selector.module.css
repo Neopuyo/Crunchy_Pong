@@ -1,0 +1,41 @@
+.selector {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  margin: 6px auto;
+}
+
+.activeBtn {
+  appearance: none;
+  width: 80px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--primary1);
+  background-color: var(--secondary1);
+  border: 3px solid var(--accent1);
+  transition: all 0.3s ease-in;
+}
+
+.inactiveBtn {
+  appearance: none;
+  appearance: none;
+  width: 80px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--primary3);
+  background-color: var(--primary2);
+  border: 3px solid var(--primary3);
+  transition: all 0.3s ease-out;
+}
+
+.inactiveBtn:hover {
+  color: var(--accent2);
+  border: 3px solid var(--accent2);
+}

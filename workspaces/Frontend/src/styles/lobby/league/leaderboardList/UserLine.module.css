@@ -1,0 +1,75 @@
+.userLine {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  min-width: fit-content;
+  width: 100%;
+}
+
+.cruncher {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 250px;
+  font-size: 16px;
+  padding-inline: 5px;
+  font-weight: bold;
+  color: var(--tertiary1);
+}
+
+.cruncher span {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cruncher:hover {
+  color: var(--accent1);
+}
+
+.cruncher:active {
+  color: var(--accent1);
+  scale: 0.95;
+}
+
+.avatar {
+  display: flex;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  color: var(--primary1);
+  margin: 5px;
+  flex-shrink: 0;
+}
+
+.typeInfo {
+  width: 70px;
+}
+
+.playersInfo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 200px;
+}
+
+.rank {
+  width: 100px;
+}
+
+.points {
+  width: 100px;
+}
+
+.win {
+  width: 100px;
+}
+
+.loss {
+  width: 100px;
+}

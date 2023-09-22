@@ -1,0 +1,36 @@
+.playerInfo {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 250px;
+  justify-content: space-between;
+}
+
+.avatar {
+  display: flex;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  color: var(--primary1);
+  margin: 5px;
+}
+
+.leftPlayer,
+.rightPlayer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.leftPlayer p,
+.rightPlayer p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.vs {
+  font-weight: bold;
+}

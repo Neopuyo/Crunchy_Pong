@@ -1,0 +1,258 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  margin: 10px;
+}
+
+p.placeholder {
+  margin: 0;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* ---------------------------------------------------------------- */
+
+.starBox {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-inline: 30px;
+}
+
+.star {
+  font-size: 1.6rem;
+  margin: 5px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.winrateBoard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.winrateBoardItem {
+  font-family: var(--title-font);
+  color: var(--primary1);
+  min-width: 60px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.winrateBoardItem .number {
+  display: flex;
+  align-items: baseline;
+
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent1);
+}
+
+.winrateBoardItem .number .percentSign {
+  font-size: 0.7rem;
+}
+
+.winrateBoardItem .title {
+  border: 3px solid var(--accent1);
+  padding: 5px 2px;
+  text-align: center;
+  border-radius: 0.15rem;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.15rem;
+  width: 100%;
+  background-color: var(--secondary1);
+}
+
+.winrateBoardItem.played {
+  margin-right: 15px;
+}
+
+.global {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.total {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+  border-radius: 0.15rem;
+  background-color: var(--secondary1);
+
+  border: 3px solid var(--accent1);
+}
+
+.total .label {
+  letter-spacing: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--primary1);
+  font-weight: 800;
+}
+
+.total .number {
+  font-size: 1.5rem;
+  color: var(--tertiary1);
+}
+
+/* ---------------------------------------------------------------- */
+
+.rankBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--accent1);
+  border-radius: 0.5rem;
+  color: var(--primary1);
+  overflow: hidden;
+  background-color: var(--accent1);
+}
+
+.rankMedal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 3rem;
+  padding: 2px;
+  background-color: var(--accent1);
+}
+
+.rankNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-width: 80px;
+  text-align: center;
+  font-size: 3rem;
+  padding: 2px;
+  color: var(--accent1);
+}
+
+.rankLetters {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(-180deg);
+  color: var(--accent2);
+  font-family: var(--title-font);
+  margin-right: -5px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+}
+
+.leaguePoints {
+  color: var(--accent2);
+}
+
+.leaguePointsLabel {
+  color: var(--secondary2);
+  font-size: 0.5rem;
+  font-weight: 800;
+  margin-left: 2px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.xpFrame {
+  width: 100%;
+  min-width: 200px;
+  max-width: 800px;
+  height: 40px;
+  padding: 0px 15px 0px 15px;
+  margin-bottom: 10px;
+  user-select: none;
+
+  /* border: 1px solid chartreuse; */
+}
+
+.xpLevel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid var(--secondary1) 3px;
+  border-radius: 10px;
+
+  height: 100%;
+  aspect-ratio: 1/1;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-family: var(--title-font);
+
+  color: var(--tertiary1);
+  background-color: var(--primary2);
+}
+
+.xpCapsule {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: solid var(--secondary1) 3px;
+  overflow: hidden;
+  background-color: var(--primary2);
+  margin-left: 8px;
+
+  position: relative;
+}
+
+.xpCapsule:hover {
+  cursor: pointer;
+  border: solid 3px var(--accent1);
+}
+
+.xpBar {
+  background-color: var(--accent2);
+  color: var(--accent2);
+  min-width: 0px;
+  min-height: 100%;
+
+  z-index: 1;
+  position: relative;
+}
+
+.xpDigits {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+
+  z-index: 5;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+
+  color: var(--tertiary1);
+
+  /* border: 1px dashed hotpink; */
+}

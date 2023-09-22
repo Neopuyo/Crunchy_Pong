@@ -1,0 +1,132 @@
+.logEmail {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+}
+
+.description {
+  text-align: center;
+  font-size: clamp(16px, 1vw, 30px);
+  margin-bottom: clamp(20px, 5vh, 80px);
+}
+
+.input {
+  appearance: none;
+  border-radius: 4px;
+  font-size: clamp(16px, 1vw, 30px);
+  font-weight: bold;
+  color: var(--secondary1);
+  background-color: var(--primary1);
+  border: 3px solid var(--secondary1);
+  padding: 6px;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.input::placeholder {
+  color: var(--tertiary1);
+  font-weight: bold;
+}
+
+.input:hover {
+  border: 3px solid var(--accent1);
+}
+
+.input:focus {
+  outline: none;
+  border: 3px solid var(--accent1);
+}
+
+.email {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: clamp(10px, 3vh, 50px);
+  font-size: clamp(18px, 2vw, 30px);
+  font-weight: bold;
+  color: var(--tertiary1);
+  word-break: break-all;
+}
+
+.emailBtn {
+  cursor: pointer;
+  margin: auto 10px;
+}
+
+.notif {
+  padding-top: 10px;
+  color: var(--notif);
+  font-size: clamp(0.8rem, 1vh, 1.2rem);
+}
+
+.continueBtn {
+  appearance: none;
+  padding: 5px 20px;
+  border-radius: 4px;
+  font-size: clamp(18px, 2vw, 40px);
+  font-weight: bold;
+  /* transition: all 0.3s ease-in; */
+  margin-top: clamp(20px, 3vh, 80px);
+  margin-inline: 10px;
+  color: var(--tertiary1);
+  background-color: inherit;
+  border: 3px solid var(--accent1);
+  cursor: pointer;
+}
+
+/* .continueBtn:checked {
+  transition: all 0.3s ease-out;
+} */
+
+.continueBtn:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.openPassword {
+  height: auto;
+  width: 100%;
+  opacity: 1;
+  transition:
+    height 1s ease,
+    opacity 0.5s ease;
+}
+
+.closePassword {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.openPassword p {
+  padding-top: clamp(10px, 1vh, 30px);
+  color: var(--accent1);
+  font-size: clamp(0.9rem, 1vw, 1.5rem);
+  font-family: var(--text-font);
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.openPassword p span {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1500px) {
+  .input {
+    max-width: 900px;
+  }
+
+  .continueBtn {
+    min-width: 400px;
+  }
+}
+
+@media screen and (min-height: 2000px) {
+  .continueBtn {
+    margin-bottom: 50px;
+  }
+}

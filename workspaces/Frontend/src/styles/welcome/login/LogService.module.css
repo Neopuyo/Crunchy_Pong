@@ -1,0 +1,60 @@
+.logService {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.description {
+  font-size: clamp(16px, 1vw, 30px);
+}
+
+.logImg {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: clamp(140px, 25vw, 500px);
+  margin: 10px;
+  margin-top: 5vh;
+}
+
+.oneClick {
+  border: 2px solid var(--secondary1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(40px, 4vw, 100px);
+  height: clamp(40px, 4vw, 100px);
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: var(--bubble);
+  position: relative;
+}
+
+.oneClick:hover {
+  scale: 1.05;
+}
+
+.oneClick:active {
+  scale: 0.95;
+}
+
+.school {
+  padding: 0.5vw;
+}
+
+.google {
+  padding: 0.7vw;
+}
+
+@media screen and (min-height: 1500px) {
+  .logService {
+    margin-top: 50px;
+  }
+
+  .google {
+    padding: 0.4vw;
+  }
+}

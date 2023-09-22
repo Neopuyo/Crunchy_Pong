@@ -1,0 +1,93 @@
+.info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.avatar {
+  display: flex;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  @media (min-width: 800px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.leftPlayer,
+.rightPlayer {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 33%;
+  font-size: 14px;
+  @media (min-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+.rightPlayer {
+  flex-flow: row-reverse wrap;
+}
+
+.leftPlayer:hover,
+.rightPlayer:hover {
+  scale: 1.05;
+}
+
+.leftPlayer:active,
+.rightPlayer:active {
+  appearance: none;
+  scale: 0.95;
+}
+
+.playerName {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
+}
+
+.showScore {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.displayRound {
+  margin: 5px;
+  padding: 4px 12px;
+  border-radius: 5px;
+}
+
+.roundRemaining {
+  border: 3px solid var(--primary2);
+}
+
+.currentRound {
+  border: 3px solid var(--secondary1);
+}
+
+.roundFinished {
+  border: 3px solid var(--secondary1);
+}
+
+.round {
+  font-size: 18px;
+}
+
+.score {
+  font-size: 16px;
+}

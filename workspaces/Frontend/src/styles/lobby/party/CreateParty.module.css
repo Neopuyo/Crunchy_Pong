@@ -1,0 +1,82 @@
+.createParty {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.section {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--tertiary1);
+  margin-bottom: 5px;
+}
+
+.save {
+  appearance: none;
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+  margin: 2px;
+  color: var(--primary1);
+  background-color: var(--secondary1);
+  border: 3px solid var(--accent1);
+}
+
+.save:checked {
+  transition: all 0.3s ease-out;
+}
+
+.save:hover {
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.save:active {
+  scale: 0.8;
+  color: var(--accent1);
+  border: 3px solid var(--accent2);
+}
+
+.cancel {
+  color: var(--secondary3);
+  background-color: var(--primary2);
+  border: 3px solid var(--secondary3);
+}
+
+.confirm {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.define {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.settings {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.field {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px auto;
+}
