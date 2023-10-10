@@ -17,8 +17,8 @@ export HOST_IP
 
 all : 
 	@echo "----Starting Production Servers with IP----"
-	@make write-env-ip
-	@make write-env-build
+	#@make write-env-ip
+	#@make write-env-build
 	@make start
 	@echo "ipAddress: $(HOST_IP)"
 
