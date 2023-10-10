@@ -14,7 +14,7 @@ CrunchyPong is <b>a single-page application</b>. The main purpose of this websit
 - **Database : PostgreSQL**
 
 This team project was about 5 month long. It was a nice way to learn concept like <b>authentication</b>, <b>authorization</b>, <b>websocket</b>, <b>REST API</b>, <b>entity</b> and <b>database relation</b> and a lot of stuff related to <b>TypeScript</b> and <b>NodeJS</b>. A good way to learn how <b>structure and drive a project within a team</b>.</br>
-We improved a lot our <b>html</b> & <b>CSS</b> skills too with that <b>responsive</b> website integrated a <b>color scheme</b> switch.
+We improved a lot our <b>html</b> & <b>CSS</b> skills too with that <b>responsive</b> website integrating a <b>color scheme</b> switch.
 
 ## User creation
 
