@@ -26,7 +26,7 @@ export class MailService {
 	async sendUserConfirmation(email: string, code: string) {
 		const codeFormated = code.substring(0, 4) + " - " + code.substring(4);
 
-		if (process.env && process.env.ENVIRONNEMENT && process.env.ENVIRONNEMENT === "dev")
+		//if (process.env && process.env.ENVIRONNEMENT && process.env.ENVIRONNEMENT === "dev")
 			console.log("code email: ", code);
 		return this.transporter.sendMail({
 			to: email,
